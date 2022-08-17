@@ -2,6 +2,7 @@ import React from 'react';
 import './Window.css';
 
 const Window = () => {
+
     return (
         <div className="window">
             <h2 className='window-header'>
