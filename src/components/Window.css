@@ -1,0 +1,52 @@
+.window {
+    color: black;
+    background-color: #1efaef;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.window-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.generate-result {
+    background-color: #1ac489;
+    border-radius: 10px;
+    padding: 13px 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 15px;
+}
+
+.option-input-number {
+    width: 50px;
+}
+
+.option-input-text {
+    width: 150px;
+}
+
+.option-label {
+    margin-right: 8px;
+}
+
+.rearrange {
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+
+}
