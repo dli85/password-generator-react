@@ -20,6 +20,7 @@
     height: 46px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .option {
