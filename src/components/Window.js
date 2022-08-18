@@ -65,9 +65,8 @@ const Window = () => {
         for (let i = 0; i < raw.length; i++) {
             finished = finished + raw[i];
         }
-        console.log(raw);
+        //console.log(raw);
         setPassword(finished);
-
         //console.log(`${numUppercase} ${numLowercase} ${numDigits} ${numSymbols} ${phrase}`);
     }
 
@@ -75,6 +74,26 @@ const Window = () => {
         set(newValue);
     }
 
+    const rearrange = () => {
+        const tempList = [...rawList]
+
+        for (let i = tempList.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            let temp = tempList[i];
+            tempList[i] = tempList[j];
+            tempList[j] = temp;
+        }
+
+        setRawList(tempList);
+
+        let finished = '';
+
+        for (let i = 0; i < tempList.length; i++) {
+            finished = finished + tempList[i];
+        }
+        setPassword(finished);
+
+    }
 
     return (
         <div className="window">
@@ -84,7 +103,7 @@ const Window = () => {
             <div className='generate-result'>
                 {password}
             </div>
-            <button className='rearrange'>Rearrange password</button>
+            <button className='rearrange' onClick={rearrange}>Rearrange password</button>
             <div className='option'>
                 <label className='option-label'># of uppercase letters</label>
                 <input
